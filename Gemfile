@@ -13,6 +13,7 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'stock_quote'
 gem "therubyracer"
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
