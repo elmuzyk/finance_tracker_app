@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :stocks, through: :user_stocks
 
   def full_name
-    return first_name + ' ' + last_name
+    return "#{first_name}  #{last_name}"
   end
 
   def can_add_stock?(ticker_symbol)
