@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :user_stocks
+  devise_for :users, :controllers => "user/registrations"
 
-  devise_for :users
+  resources :user_stocks
 
   resources :user_stocks, except: [:show, :edit, :update]
 
