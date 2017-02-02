@@ -5,13 +5,13 @@
       .col-md-10
         = text_field_tag :search_param, params[:search_param], placeholder: "first name, last name or email", autofocus: true, class: 'form-control search-box input-lg'
       .col-md-2
-        = button_tag, type: :submit, class: "btn btn-lg btn-success" do
+        = button_tag(type: :submit, class: "btn btn-lg btn-success") do
           %i.fa.fa-search
           Look up friend
   = render 'common/spinner'
   - if @users
     - if @users.size > 0
-      #friend-lookup-resoults.well.results-block.col-md-10
+      #friend-lookup-results.well.results-block.col-md-10
         %table.search-results-table.col-md-12
           %tbody
             - @users.each do |user|
